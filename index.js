@@ -11,6 +11,9 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 8,
         sourceType: 'module',
+        ecmaFeatures: {
+            experimentalObjectRestSpread: true,
+        },
     },
     rules: {
         // Use my personal JS-Allman-style flavor:
@@ -22,8 +25,7 @@ module.exports = {
             controlStatementsOnly: true,
         }],
         
-        // TODO: Enable when `indent-rewrite` gets merged.
-        //       &&     when ClassDeclaration/ClassExpression options are implemented.
+        // TODO: Enable when ClassDeclaration/ClassExpression options are implemented.
         indent: 0,
         'nemoxps/indent': [2, 2, {
             SwitchCase: 1,
@@ -49,22 +51,7 @@ module.exports = {
             ClassExpression: 2,
             ArrayExpression: 2,
             ObjectExpression: 2,
-            flatTernaryExpressions: false,
+            flatTernaryExpressions: true,
         }],
-        
-        // TODO: Enable when padding in implicit blocks can be prohibited.
-        'padded-blocks': 0,
-        'nemoxps/padded-blocks': [2, {
-            blocks: 'never',
-            classes: 'never',
-            switches: 'never',
-            'implicit-blocks': 'never',
-        }],
-        
-        // TODO: Enable when the following syntax is allowed but not required.
-        // let foo = {
-        //     bar: true
-        // };
-        'object-curly-newline': 0,
     },
 };

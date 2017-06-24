@@ -6,11 +6,11 @@ module.exports = {
         
         'no-shadow-restricted-names': 2,
         
-        'no-undef-init': 2,
-        
         'no-undef': [2, {
             typeof: true,
         }],
+        
+        'no-undef-init': 2,
         
         'no-unused-vars': [2, {
             vars: 'local',

@@ -28,7 +28,6 @@ module.exports = {
         
         'no-empty-pattern': 2,
         
-        // Add `eslint-disable` comment if you know what you do
         'no-eval': [2, {
             allowIndirect: false,
         }],
@@ -46,6 +45,9 @@ module.exports = {
         'no-global-assign': 2,
         
         'no-implicit-coercion': [2, {
+            boolean: true,
+            number: true,
+            string: true,
             allow: ['!!'],
         }],
         
@@ -73,16 +75,15 @@ module.exports = {
         
         'no-multi-str': 2,
         
-        // Add `eslint-disable` comment if you know what you do
+        'no-new': 2,
+        
         'no-new-func': 2,
         
         'no-new-wrappers': 2,
         
-        'no-new': 2,
+        'no-octal': 2,
         
         'no-octal-escape': 2,
-        
-        'no-octal': 2,
         
         'no-proto': 2,
         

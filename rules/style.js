@@ -33,8 +33,6 @@ module.exports = {
         
         'computed-property-spacing': [2, 'never'],
         
-        'consistent-this': [2, 'that'],
-        
         'eol-last': [2, 'never'],
         
         'func-call-spacing': [2, 'never'],
@@ -65,7 +63,10 @@ module.exports = {
             },
             ArrayExpression: 2,
             ObjectExpression: 2,
+            flatTernaryExpressions: true,
         }],
+        
+        'jsx-quotes': [2, 'prefer-double'],
         
         'key-spacing': [2, {
             beforeColon: false,
@@ -79,11 +80,6 @@ module.exports = {
         }],
         
         'linebreak-style': [2, 'unix'],
-        
-        'lines-around-directive': [2, {
-            before: 'always',
-            after: 'always',
-        }],
         
         'new-parens': 2,
         
@@ -109,6 +105,7 @@ module.exports = {
         
         'no-trailing-spaces': [2, {
             skipBlankLines: true,
+            ignoreComments: false,
         }],
         
         'no-unneeded-ternary': [2, {
@@ -125,6 +122,7 @@ module.exports = {
         
         'object-curly-newline': [2, {
             multiline: true,
+            consistent: true,
         }],
         
         'object-curly-spacing': [2, 'always'],
@@ -141,6 +139,14 @@ module.exports = {
             switches: 'never',
         }],
         
+        'padding-line-between-statements': [2, {
+            blankLine: 'always', prev: 'directive', next: '*',
+        }, {
+            blankLine: 'any', prev: 'directive', next: 'directive',
+        }, {
+            blankLine: 'always', prev: 'case', next: '*',
+        }],
+        
         'quote-props': [2, 'as-needed', {
             keywords: false,
             unnecessary: true,
@@ -152,14 +158,16 @@ module.exports = {
             allowTemplateLiterals: false,
         }],
         
+        semi: [2, 'always', {
+            omitLastInOneLineBlock: false,
+        }],
+        
         'semi-spacing': [2, {
             before: false,
             after: true,
         }],
         
-        semi: [2, 'always', {
-            omitLastInOneLineBlock: false,
-        }],
+        'semi-style': [2, 'last'],
         
         'space-before-blocks': [2, 'always'],
         
@@ -183,6 +191,11 @@ module.exports = {
                 markers: ['!'],
                 balanced: true,
             },
+        }],
+        
+        'switch-colon-spacing': [2, {
+            before: false,
+            after: true,
         }],
         
         'template-tag-spacing': [2, 'never'],

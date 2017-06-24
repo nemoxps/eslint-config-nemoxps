@@ -1,5 +1,7 @@
 module.exports = {
     rules: {
+        'for-direction': 2,
+        
         'no-compare-neg-zero': 2,
         
         'no-cond-assign': [2, 'except-parens'],
@@ -16,11 +18,11 @@ module.exports = {
         
         'no-duplicate-case': 2,
         
-        'no-empty-character-class': 2,
-        
         'no-empty': [2, {
             allowEmptyCatch: true,
         }],
+        
+        'no-empty-character-class': 2,
         
         'no-ex-assign': 2,
         
@@ -54,6 +56,8 @@ module.exports = {
         'no-unreachable': 2,
         
         'no-unsafe-finally': 2,
+        
+        'no-unsafe-negation': 2,
         
         'use-isnan': 2,
         

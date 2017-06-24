@@ -57,6 +57,8 @@ module.exports = {
             allowUnboundThis: true,
         }],
         
+        'prefer-numeric-literals': 2,
+        
         'prefer-rest-params': 2,
         
         'prefer-spread': 2,
