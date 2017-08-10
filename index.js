@@ -51,6 +51,7 @@ module.exports = {
             ClassExpression: 2,
             ArrayExpression: 2,
             ObjectExpression: 2,
+            ImportDeclaration: 2,
             flatTernaryExpressions: true,
         }],
     },

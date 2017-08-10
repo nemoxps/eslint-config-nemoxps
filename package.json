@@ -1,19 +1,19 @@
 {
     "name": "eslint-config-nemoxps",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "",
     "keywords": [],
     "author": "Pascal Hüttermann (https://github.com/nemoxps)",
     "license": "MIT",
     "main": "index.js",
     "dependencies": {
-        "eslint-plugin-nemoxps": "nemoxps/eslint-plugin-nemoxps#semver:^0.2.0"
+        "eslint-plugin-nemoxps": "nemoxps/eslint-plugin-nemoxps#semver:^0.3.0"
     },
     "devDependencies": {
-        "eslint": "^4.1.0"
+        "eslint": "^4.4.0"
     },
     "peerDependencies": {
-        "eslint": "^4.1.0"
+        "eslint": "^4.4.0"
     },
     "scripts": {
         "test:lint": "eslint ./",

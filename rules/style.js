@@ -63,6 +63,7 @@ module.exports = {
             },
             ArrayExpression: 2,
             ObjectExpression: 2,
+            ImportDeclaration: 2,
             flatTernaryExpressions: true,
         }],
         
@@ -143,8 +144,6 @@ module.exports = {
             blankLine: 'always', prev: 'directive', next: '*',
         }, {
             blankLine: 'any', prev: 'directive', next: 'directive',
-        }, {
-            blankLine: 'always', prev: 'case', next: '*',
         }],
         
         'quote-props': [2, 'as-needed', {

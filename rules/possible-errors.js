@@ -2,6 +2,8 @@ module.exports = {
     rules: {
         'for-direction': 2,
         
+        'getter-return': [2, { allowImplicit: true }],
+        
         'no-compare-neg-zero': 2,
         
         'no-cond-assign': [2, 'except-parens'],
