@@ -20,7 +20,9 @@ module.exports = {
         
         'no-case-declarations': 2,
         
-        'no-else-return': 2,
+        'no-else-return': [2, {
+            allowElseIf: false,
+        }],
         
         'no-empty-function': [2, {
             allow: ['functions', 'arrowFunctions', 'methods'],

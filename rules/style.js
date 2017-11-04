@@ -1,5 +1,7 @@
 module.exports = {
     rules: {
+        'array-bracket-newline': [2, 'consistent'],
+        
         'array-bracket-spacing': [2, 'never', {
             singleValue: false,
             objectsInArrays: false,
@@ -40,6 +42,8 @@ module.exports = {
         'func-style': [2, 'expression', {
             allowArrowFunctions: true,
         }],
+        
+        'function-paren-newline': [2, 'multiline'],
         
         indent: [2, 2, {
             SwitchCase: 1,
