@@ -19,7 +19,7 @@ module.exports = {
         }],
         
         'comma-dangle': [2, {
-            arrays: 'only-multiline',
+            arrays: 'always-multiline',
             objects: 'always-multiline',
             imports: 'always-multiline',
             exports: 'always-multiline',
@@ -45,6 +45,8 @@ module.exports = {
         
         'function-paren-newline': [2, 'multiline'],
         
+        'implicit-arrow-linebreak': [2, 'beside'],
+        
         indent: [2, 2, {
             SwitchCase: 1,
             VariableDeclarator: {
@@ -69,6 +71,7 @@ module.exports = {
             ObjectExpression: 2,
             ImportDeclaration: 2,
             flatTernaryExpressions: true,
+            ignoreComments: true,
         }],
         
         'jsx-quotes': [2, 'prefer-double'],

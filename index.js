@@ -53,6 +53,7 @@ module.exports = {
             ObjectExpression: 2,
             ImportDeclaration: 2,
             flatTernaryExpressions: true,
+            ignoreComments: true,
         }],
     },
 };
